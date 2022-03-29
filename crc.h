@@ -37,6 +37,9 @@
 #define CRC32_INIT                  (0xFFFFFFFF)
 #define CRC32_IEEE802_3_INIT        (0xFFFFFFFF)
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /*============================ MACROFIED FUNCTIONS ===========================*/
 /*============================ TYPES =========================================*/
@@ -298,7 +301,9 @@ extern uint32_t crc32_stream_check( uint32_t *pwCRCValue,
  */
 extern uint32_t crc32_check(uint32_t *pwCRCValue, uint8_t chData);
 
-
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 
